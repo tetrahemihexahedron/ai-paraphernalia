@@ -1,0 +1,13 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "channel": "chromium",
+      "headless": true
+    }
+  },
+  "outputDir": ".pi/browser-output",
+  "outputMode": "file",
+  "codegen": "none"
+}
