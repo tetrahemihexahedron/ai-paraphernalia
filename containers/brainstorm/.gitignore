@@ -1,0 +1,8 @@
+.DS_Store
+
+.pi/*
+
+# track custom agent prompts
+!.pi/
+!.pi/prompts/
+!.pi/prompts/**
