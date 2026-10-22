@@ -1,0 +1,34 @@
+{
+  "name": "webgallery",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true,
+      "username": "dev",
+      "userUid": "1001",
+      "userGid": "1001"
+    },
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "24.19.0",
+      "pnpmVersion": "11.23"
+    },
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.26.5"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"]
+    }
+  },
+
+  "remoteUser": "dev",
+  "workspaceFolder": "/workspaces/webgallery",
+
+  "containerEnv": {
+    "PI_CODING_AGENT_DIR": "/workspaces/webgallery/.pi"
+  },
+
+  "postCreateCommand": "bash .devcontainer/install-tools.sh"
+}
